@@ -1,4 +1,4 @@
-# trying this out. from https://stackoverflow.com/questions/17333531/how-can-i-display-the-current-branch-and-folder-path-in-terminal
+# zsh prompt format. Looks like: "~/current/directory [current-git-branch] "
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
