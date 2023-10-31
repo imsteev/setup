@@ -8,3 +8,8 @@ COLOR_GIT='%F{220}'
 # Set zsh option for prompt substitution
 setopt PROMPT_SUBST
 PROMPT='${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} '
+
+
+# commonly used aliases
+alias editz='vi ~/.zshrc'
+alias srcz='source ~/.zshrc'
