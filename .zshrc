@@ -1,4 +1,5 @@
 # zsh prompt format. Looks like: "~/current/directory [current-git-branch] "
+# looks good with a dark terminal. if using iTerm2, try out the preset "Minimal" theme
 parse_git_branch() {
     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
