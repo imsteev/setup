@@ -12,5 +12,5 @@ PROMPT='${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} '
 
 
 # commonly used aliases
-alias editz='vi ~/.zshrc'
-alias srcz='source ~/.zshrc'
+alias ez='vi ~/.zshrc'
+alias sz='source ~/.zshrc'
