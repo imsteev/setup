@@ -11,6 +11,18 @@ setopt PROMPT_SUBST
 PROMPT='${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} '
 
 
-# commonly used aliases
+# edit zshrc file
 alias ez='code ~/.zshrc'
+
+# print zshrc file
 alias sz='source ~/.zshrc'
+
+# lists files in current directory
+# -A is to list all dotfiles, EXCEPT "./" and "../"
+# -G is for coloring
+alias .='ls -A -G'
+
+# shortcuts for going up
+alias ..='cd ..'          # go up 1 level
+alias ...='cd ../..'      # go up 2 levels
+alias ....='cd ../../..'  # go up 3 levels
