@@ -18,11 +18,12 @@ alias ez='code ~/.zshrc'
 alias sz='source ~/.zshrc'
 
 # lists files in current directory
-# -A is to list all dotfiles, EXCEPT "./" and "../"
-# -G is for coloring
 alias .='ls -A -G'
 
-# shortcuts for going up
-alias ..='cd ..'          # go up 1 level
-alias ...='cd ../..'      # go up 2 levels
-alias ....='cd ../../..'  # go up 3 levels
+# go back to previous directory. see https://askubuntu.com/a/146034
+alias -- -='cd -'
+
+# shortcuts for going up (until) 3 levels
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
