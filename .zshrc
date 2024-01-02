@@ -18,7 +18,7 @@ alias ez='code ~/.zshrc'
 alias sz='source ~/.zshrc'
 
 # lists files in current directory
-alias .='ls -A -G'
+alias .='ls -A'
 
 # go back to previous directory. see https://askubuntu.com/a/146034
 alias -- -='cd -'
